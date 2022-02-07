@@ -11,6 +11,7 @@ void OnTick()
      double Balance=AccountInfoDouble(ACCOUNT_BALANCE);
      double Equity=AccountInfoDouble(ACCOUNT_EQUITY);
      double Bid=NormalizeDouble(SymbolInfoDouble(_Symbol, SYMBOL_BID),_Digits);
+     double PositionProfit=PositionGetDouble(POSITION_PROFIT);
      
      if(PositionsTotal()==0)
      trade.Buy(

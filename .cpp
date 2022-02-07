@@ -25,6 +25,7 @@ void OnTick()
      
 
       if (TimeLocal() >= TimeSent + (WaitTime * 60) && Equity<Balance)
+      if (PositionsTotal()==1 && PositionProfit<0)
          {
               trade.Sell(
               0.02,
